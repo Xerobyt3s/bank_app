@@ -2,9 +2,10 @@ import socket
 import os
 import time
 
-#connects to database through a socket
+
 Client = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-Client.connect(("localhost", 433)) #Change to localhost if you dont want to use my server for authentication
+#connects to server through a socket
+Client.connect(("localhost", 9999)) #Change to localhost if you dont want to use my server for authentication
 
 MenuSelected = 0
 
