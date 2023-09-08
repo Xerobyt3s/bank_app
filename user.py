@@ -25,7 +25,11 @@ while True:
             print("Welcome to Bank, what can we do for you\n")
             print("1. login to existing account")
             print("2. create new account")
-            MenuSelected = int(input("option: "))
+            print("3. exit")
+            try:
+                MenuSelected = int(input("option: "))
+            except:
+                MenuSelected = 0
 
         case 1:
             #selects authentication for existing account and displays info to user
@@ -59,6 +63,10 @@ while True:
             time.sleep(2)
             
             MenuSelected = 0
+
+        case 3:
+            os.system("cls")
+            break
 
         case _:
             MenuSelected = 0
